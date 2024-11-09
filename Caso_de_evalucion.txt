@@ -1,0 +1,62 @@
+**CASO DE EVALUACION**
+
+Su empresa se dedica a recibir dispositivos para repararlos. En algunos casos, no
+se puede reparar y deben solicitar un dispositivo nuevo. Cuentan con una base de
+datos muy grande donde se registra el estado de cada componente del dispositivo,
+y un dato final indicando si pudo repararse o si fue necesario solicitar un dispositivo
+nuevo.
+Le solicitan que haga y entrene un modelo con esos datos, para que al final se
+ingresen los datos de los componentes, y muestre una predicción indicando si el
+dispositivo puede repararse, o si debe solicitarse uno nuevo.
+
+
+Responda a las siguientes preguntas:
+
+• ¿Qué tipo de modelo aplicaría?
+
+R/= Un modelo de clasificación, ya que se debe predecir si el dispositivo puede ser reparado o no.
+    En este caso en particular yo aplicaría el modelo de Decision Tree Classifier.
+
+• ¿Por qué consideras que ese modelo es adecuado?
+
+    Considero que sería el mas adecuado porque es más flexible para pre-procesar conjuntos que tienen
+    muchas características, ya sean continuas o categóricas y puede capturar relaciones no lineales entre
+    las características y la variable objetivo.
+
+    En este caso la variable objetivo es si el dispositivo puede ser reparado o no y las características
+    son el estado de cada componente del dispositivo. Teniendo en cuenta que la base de datos es muy grande
+    y que cada dispositivo puede tener muchos componentes, el modelo de Decision Tree Classifier
+     es el más adecuado en mi opinion.
+
+
+Ahora ha aplicado algunos algoritmos de machine learning en datos:
+
+• ¿De qué manera considera que es diferente a la programación regular, para
+este tipo de proyectos?
+
+R/= A diferencia de la programación regular, que sigue reglas y condiciones que uno define explícitamente,
+    en Machine Learning el modelo aprende automáticamente de los datos para tomar decisiones, básicamente
+    uno solo tiene que aprender la programación para analizar y tratar los datos para que
+    estén optimos para entrenar el modelo que se va a aplicar, asi como también hay que saber
+    que parámetros y funciones se deben aplicar para que el modelo sea el más adecuado para los datos.
+    Mas, sin embargo, uno no tiene que escribir explícitamente las reglas y condiciones para que el
+    modelo haga las predicciones, incluso en situaciones nuevas donde no se tiene información previa.
+    Lo importante aquí es que hayan datos suficientes y de calidad.
+
+
+• ¿Por qué cree que los modelos como los vistos en las clases no logran llegar
+a un 100% de respuestas correctas?
+
+R/= Los modelos que hemos visto en clase no logran llegar al 100% de respuestas correctas porque a veces
+    los datos que usamos no son perfectos, pueden tener ruido, errores, valores atípicos,
+    o simplemente no hay suficientes para predecir con certeza.
+    Por otro lado, algunos problemas tienen relaciones entre los datos que son difíciles de captar
+    para un modelo, sobre todo si no son simples o lineales.
+    También los modelos pueden sobre-ajustarse a los datos de entrenamiento, lo que significa que el
+    modelo se ajusta demasiado a los datos de entrenamiento y no generaliza bien a datos nuevos,
+    asi mismo puede ocurrir el caso contrario, que el modelo no se ajuste lo suficiente a los datos
+    de entrenamiento y ocurra un sub-ajuste.
+    A veces, los modelos pueden ser influenciados por datos que no son realmente importantes
+    para hacer la predicción, lo que también puede reducir su precisión.
+    Y por último, es importante recalcar que los modelos de machine learning no dan respuestas exactas
+    al 100% porque están basados en probabilidades, lo que siempre deja espacio para algún error.
